@@ -1,0 +1,13 @@
+{
+    "name": "it-for-free/file-uploader",
+    "type": "php-class",
+    "description": "Загрузка файлов",
+    "keywords": ["php", "file", "uploader", "class"],
+    "homepage": "http://fkn.ktu10.com/node/7716",
+    
+    "autoload": {
+        "psr-4": {
+            "ItForFree\\": ""
+        }
+    }
+}
