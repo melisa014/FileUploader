@@ -7,7 +7,8 @@ namespace ItForFree;
  *
  * @author qwe
  */
-class FileUploader {
+class FileUploader 
+{
      
     /**
      * Права доступа к папкам по умолчанию
@@ -30,8 +31,8 @@ class FileUploader {
      * 
      * @param type $files         -- массив в файлов как в $_FILES
      * @param type $basePath      -- Базовый путь (до $addtionalPath)
-     * @param type $addtionalPath -- без слэгэй в начале и конце. Пусть начаная с которого нужно вернуть путь к загруженному файлу
-     * @return type
+     * @param type $addtionalPath -- (без слэшэй в начале и конце) путь, начиная с которого нужно вернуть путь к загруженному файлу.
+     * @return array              -- вернёт массив, в каждой сторке которого будет подмассив, содержащий два поля: 1) имя файла 2) путь к нему (от базовой директории загрузки)
      * @throws \Exception
      */
     public function uploadToRelativePath($files, $basePath, $addtionalPath)
